@@ -1,0 +1,15 @@
+M3 Business Services package contents
+
+Overlay directories:
+- app/services/*.py
+- tests/unit/test_*_service*.py
+- tests/integration/test_services_real_dataset.py
+
+Documentation:
+- M3_README.md
+- M3_POLICY_DECISIONS.md
+- M3_TEST_REPORT.md
+
+This is an overlay for the existing M1 + M2 project. It intentionally does not replace app/domain or app/data, and it contains no .git, .venv, source CSVs, customer data, or policy PDF.
+
+Extract at the root of emporio-ai-assistant.

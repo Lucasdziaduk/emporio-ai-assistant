@@ -1,0 +1,32 @@
+M4 Knowledge Base and RAG overlay contents
+
+Application:
+- app/knowledge/__init__.py
+- app/knowledge/__main__.py
+- app/knowledge/chunker.py
+- app/knowledge/conflict_registry.py
+- app/knowledge/context_formatter.py
+- app/knowledge/evaluation.py
+- app/knowledge/extractor.py
+- app/knowledge/retriever.py
+- app/knowledge/tokenizer.py
+- app/services/policy_service.py (M3-compatible facade, upgraded implementation)
+
+Tests:
+- tests/unit/test_knowledge_extractor.py
+- tests/unit/test_knowledge_chunker.py
+- tests/unit/test_knowledge_retriever.py
+- tests/unit/test_knowledge_conflicts.py
+- tests/unit/test_policy_service_m4.py
+- tests/unit/test_policy_context_formatter.py
+- tests/integration/test_knowledge_real_policy.py
+- tests/evaluations/test_policy_retrieval_evaluation.py
+
+Documentation:
+- M4_README.md
+- M4_POLICY_COVERAGE.md
+- M4_EVALUATION_REPORT.md
+- M4_EVALUATION.json
+
+This is an overlay for the existing M1 + M2 + M3 project. It does not include or replace app/domain, app/data, the original CSVs, the internal policy PDF, .env, .venv, or .git.
+Extract at the root of emporio-ai-assistant.

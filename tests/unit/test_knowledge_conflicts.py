@@ -25,3 +25,13 @@ def test_contact_and_installment_conflicts_are_documented():
     installment = registry.get_conflicts("Qual o mínimo de parcela no crédito?")
     assert installment[0].status == "interpreted"
     assert registry.requires_human_review("Qual o mínimo de parcela no crédito?") is False
+
+
+def test_broad_exchange_and_return_policy_requires_review_but_preference_swap_does_not():
+    registry = PolicyConflictRegistry()
+    assert registry.requires_human_review(
+        "Como funciona a política de troca e devolução da loja?"
+    ) is True
+    assert registry.requires_human_review(
+        "Posso trocar o instrumento por preferência de cor?"
+    ) is False

@@ -86,7 +86,19 @@ class PolicyConflictRegistry:
 
         matches: list[PolicyConflict] = []
         warranty_related = bool(tokens.intersection({"garantia", "defeito", "troca", "fabricante"}))
-        if warranty_related and self._mentions_after_30_days(normalized):
+        # A broad request covering both exchange and return can surface section
+        # 4.2 (manufacturer after 30 days) alongside section 8.1 (90-day legal
+        # warranty). Flag that combined topic before the LLM summarizes only
+        # one side of the unresolved policy conflict. A precise preference
+        # exchange remains answerable from section 4.3.
+        broad_exchange_and_return = (
+            "troca" in tokens
+            and "devolucao" in tokens
+            and "preferencia" not in tokens
+        )
+        if warranty_related and (
+            self._mentions_after_30_days(normalized) or broad_exchange_and_return
+        ):
             matches.append(POLICY_CONFLICTS["warranty_after_30_days"])
         if tokens.intersection({"frete", "entrega", "envio"}) and self._mentions_exact_500(normalized):
             matches.append(POLICY_CONFLICTS["freight_exactly_500"])

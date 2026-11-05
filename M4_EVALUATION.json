@@ -1,0 +1,370 @@
+{
+  "case_count": 24,
+  "top_k": 3,
+  "recall_at_k": 1.0,
+  "mrr": 0.9792,
+  "hits": 24,
+  "misses": 0,
+  "cases": [
+    {
+      "case_id": "P01",
+      "topic": "store_scope",
+      "expected_sections": [
+        "1"
+      ],
+      "retrieved_sections": [
+        "1",
+        "1.2",
+        "6.1"
+      ],
+      "first_relevant_rank": 1,
+      "hit": true,
+      "requires_human_review": false
+    },
+    {
+      "case_id": "P02",
+      "topic": "store_scope",
+      "expected_sections": [
+        "1",
+        "7.1"
+      ],
+      "retrieved_sections": [
+        "1",
+        "7.1",
+        "8.3"
+      ],
+      "first_relevant_rank": 1,
+      "hit": true,
+      "requires_human_review": false
+    },
+    {
+      "case_id": "P03",
+      "topic": "mission",
+      "expected_sections": [
+        "1.1"
+      ],
+      "retrieved_sections": [
+        "1.1"
+      ],
+      "first_relevant_rank": 1,
+      "hit": true,
+      "requires_human_review": false
+    },
+    {
+      "case_id": "P04",
+      "topic": "address",
+      "expected_sections": [
+        "1.2"
+      ],
+      "retrieved_sections": [
+        "1.2",
+        "5.1",
+        "cover"
+      ],
+      "first_relevant_rank": 1,
+      "hit": true,
+      "requires_human_review": false
+    },
+    {
+      "case_id": "P05",
+      "topic": "opening_hours",
+      "expected_sections": [
+        "2"
+      ],
+      "retrieved_sections": [
+        "2",
+        "7.1"
+      ],
+      "first_relevant_rank": 1,
+      "hit": true,
+      "requires_human_review": false
+    },
+    {
+      "case_id": "P06",
+      "topic": "pix",
+      "expected_sections": [
+        "3",
+        "6.2"
+      ],
+      "retrieved_sections": [
+        "3",
+        "6.2",
+        "3.1"
+      ],
+      "first_relevant_rank": 1,
+      "hit": true,
+      "requires_human_review": false
+    },
+    {
+      "case_id": "P07",
+      "topic": "installments",
+      "expected_sections": [
+        "3"
+      ],
+      "retrieved_sections": [
+        "3",
+        "3.1"
+      ],
+      "first_relevant_rank": 1,
+      "hit": true,
+      "requires_human_review": false
+    },
+    {
+      "case_id": "P08",
+      "topic": "installments",
+      "expected_sections": [
+        "3.1"
+      ],
+      "retrieved_sections": [
+        "3.1",
+        "3",
+        "4.3"
+      ],
+      "first_relevant_rank": 1,
+      "hit": true,
+      "requires_human_review": false
+    },
+    {
+      "case_id": "P09",
+      "topic": "online_returns",
+      "expected_sections": [
+        "4.1"
+      ],
+      "retrieved_sections": [
+        "4.1",
+        "4.2",
+        "3"
+      ],
+      "first_relevant_rank": 1,
+      "hit": true,
+      "requires_human_review": false
+    },
+    {
+      "case_id": "P10",
+      "topic": "refund",
+      "expected_sections": [
+        "4.1"
+      ],
+      "retrieved_sections": [
+        "4.1",
+        "5.2",
+        "5.1"
+      ],
+      "first_relevant_rank": 1,
+      "hit": true,
+      "requires_human_review": false
+    },
+    {
+      "case_id": "P11",
+      "topic": "warranty",
+      "expected_sections": [
+        "4.2",
+        "8.1"
+      ],
+      "retrieved_sections": [
+        "4.2",
+        "8.3",
+        "4.4"
+      ],
+      "first_relevant_rank": 1,
+      "hit": true,
+      "requires_human_review": false
+    },
+    {
+      "case_id": "P12",
+      "topic": "preference_exchange",
+      "expected_sections": [
+        "4.3"
+      ],
+      "retrieved_sections": [
+        "4.3",
+        "4.2",
+        "4.4"
+      ],
+      "first_relevant_rank": 1,
+      "hit": true,
+      "requires_human_review": false
+    },
+    {
+      "case_id": "P13",
+      "topic": "excluded_returns",
+      "expected_sections": [
+        "4.4"
+      ],
+      "retrieved_sections": [
+        "4.2",
+        "4.4",
+        "1"
+      ],
+      "first_relevant_rank": 2,
+      "hit": true,
+      "requires_human_review": false
+    },
+    {
+      "case_id": "P14",
+      "topic": "freight",
+      "expected_sections": [
+        "5.1"
+      ],
+      "retrieved_sections": [
+        "5.1",
+        "5.2",
+        "3.1"
+      ],
+      "first_relevant_rank": 1,
+      "hit": true,
+      "requires_human_review": true
+    },
+    {
+      "case_id": "P15",
+      "topic": "shipping_other_cities",
+      "expected_sections": [
+        "5.2"
+      ],
+      "retrieved_sections": [
+        "5.2",
+        "5.3",
+        "5.1"
+      ],
+      "first_relevant_rank": 1,
+      "hit": true,
+      "requires_human_review": false
+    },
+    {
+      "case_id": "P16",
+      "topic": "tracking",
+      "expected_sections": [
+        "5.3"
+      ],
+      "retrieved_sections": [
+        "5.3",
+        "4",
+        "8.1"
+      ],
+      "first_relevant_rank": 1,
+      "hit": true,
+      "requires_human_review": false
+    },
+    {
+      "case_id": "P17",
+      "topic": "promotion_cumulativity",
+      "expected_sections": [
+        "6.2"
+      ],
+      "retrieved_sections": [
+        "6.2",
+        "3",
+        "7.3"
+      ],
+      "first_relevant_rank": 1,
+      "hit": true,
+      "requires_human_review": false
+    },
+    {
+      "case_id": "P18",
+      "topic": "whatsapp_number",
+      "expected_sections": [
+        "1.2",
+        "7"
+      ],
+      "retrieved_sections": [
+        "7",
+        "2",
+        "5.3"
+      ],
+      "first_relevant_rank": 1,
+      "hit": true,
+      "requires_human_review": true
+    },
+    {
+      "case_id": "P19",
+      "topic": "complaints",
+      "expected_sections": [
+        "7.3"
+      ],
+      "retrieved_sections": [
+        "7.3",
+        "7.2",
+        "5.1"
+      ],
+      "first_relevant_rank": 1,
+      "hit": true,
+      "requires_human_review": false
+    },
+    {
+      "case_id": "P20",
+      "topic": "legal_warranty",
+      "expected_sections": [
+        "8.1"
+      ],
+      "retrieved_sections": [
+        "8.1",
+        "8.2",
+        "4.2"
+      ],
+      "first_relevant_rank": 1,
+      "hit": true,
+      "requires_human_review": false
+    },
+    {
+      "case_id": "P21",
+      "topic": "warranty_exclusions",
+      "expected_sections": [
+        "8.3"
+      ],
+      "retrieved_sections": [
+        "8.3",
+        "4.2",
+        "8.1"
+      ],
+      "first_relevant_rank": 1,
+      "hit": true,
+      "requires_human_review": false
+    },
+    {
+      "case_id": "P22",
+      "topic": "privacy",
+      "expected_sections": [
+        "9"
+      ],
+      "retrieved_sections": [
+        "9",
+        "9",
+        "cover"
+      ],
+      "first_relevant_rank": 1,
+      "hit": true,
+      "requires_human_review": false
+    },
+    {
+      "case_id": "P23",
+      "topic": "data_deletion",
+      "expected_sections": [
+        "9"
+      ],
+      "retrieved_sections": [
+        "9",
+        "9",
+        "4.1"
+      ],
+      "first_relevant_rank": 1,
+      "hit": true,
+      "requires_human_review": false
+    },
+    {
+      "case_id": "P24",
+      "topic": "escalation",
+      "expected_sections": [
+        "10"
+      ],
+      "retrieved_sections": [
+        "10",
+        "7.3",
+        "7.2"
+      ],
+      "first_relevant_rank": 1,
+      "hit": true,
+      "requires_human_review": false
+    }
+  ]
+}

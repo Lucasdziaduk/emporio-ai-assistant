@@ -38,3 +38,6 @@ def test_real_policy_flags_ambiguous_contact_and_commercial_cases():
     assert service.search("Qual é o WhatsApp correto da loja?").requires_human_review
     assert service.search("Meu instrumento apresentou defeito depois de 45 dias?").requires_human_review
     assert service.search("Qual é o frete para uma compra de R$ 500?").requires_human_review
+    assert service.search(
+        "Como funciona a política de troca e devolução da Empório da Música?"
+    ).requires_human_review
